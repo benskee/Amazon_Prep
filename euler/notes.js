@@ -38,8 +38,8 @@ const greatestCommonDenominator = (a, b) => {
 
 console.log('GCD', greatestCommonDenominator(54, 99))
 
-const permutations = function (array, n, results = []) {
-    const swap = function (array, pos1, pos2) {
+const permutations = (array, n, results = []) => {
+    const swap = (array, pos1, pos2) => {
         let temp = array[pos1];
         array[pos1] = array[pos2];
         array[pos2] = temp;
@@ -58,3 +58,14 @@ const permutations = function (array, n, results = []) {
 };
 
 console.log('permutations', permutations(['a', 'b', 'c', 'd']).map(a => a.join(' ')));
+
+
+const isPrime = num => {
+    if(num <= 1) return false
+    if(num <= 3) return true
+    if(num % 2 == 0) return false
+    for(let x=3; x<=Math.sqrt(num); x+=2) {
+        if(num % x == 0) return false
+    }
+    return true
+}

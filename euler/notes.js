@@ -69,3 +69,17 @@ const isPrime = num => {
     }
     return true
 }
+
+let arr = ['a', 'b', 'c']
+let idx = []
+for (let f of arr.entries()) idx.push(f)
+// idx = [ [ 0, 'a' ], [ 1, 'b' ], [ 2, 'c' ] ]
+
+
+const factorial = len => {
+    let total = 1
+    for(let n=0; n<len; n++) {
+        total *= len-n
+    }
+    return total
+}

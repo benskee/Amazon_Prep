@@ -18,7 +18,7 @@ for(let i=2; i<limit; i++) {
     if(arr[i]) primes[i] = true
 }
 
-const permutations = num => {
+const s = num => {
     if(num.length == 1) return num
     let array = []
     for(let i=1; i<num.length; i++) {

@@ -6,7 +6,6 @@ const letterCombinations = digits => {
     let ans = []
 
     const combos = (sub, nums) => {
-        console.log(sub,nums)
         if(!nums.length) {
             ans.push(sub)
             return

@@ -1,6 +1,3 @@
-
-JavaScript Solution
-View on Github
 /**
  * Definition for a binary tree node.
  * function TreeNode(val, left, right) {
